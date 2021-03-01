@@ -15,6 +15,7 @@
 		1DDEBE2825EC8C2E008986B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DDEBE2625EC8C2E008986B8 /* LaunchScreen.storyboard */; };
 		1DDEBE3325EC8C2E008986B8 /* DJLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3225EC8C2E008986B8 /* DJLogTests.swift */; };
 		1DDEBE3E25EC8C2E008986B8 /* DJLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */; };
+		1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1DDEBE3925EC8C2E008986B8 /* DJLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLogUITests.swift; sourceTree = "<group>"; };
 		1DDEBE3F25EC8C2E008986B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		1DDEBE1A25EC8C2D008986B8 /* DJLog */ = {
 			isa = PBXGroup;
 			children = (
+				1DDEBE5125ECA88B008986B8 /* Arithmetic */,
 				1DDEBE1B25EC8C2D008986B8 /* AppDelegate.swift */,
 				1DDEBE1D25EC8C2D008986B8 /* SceneDelegate.swift */,
 				1DDEBE1F25EC8C2D008986B8 /* ViewController.swift */,
@@ -126,6 +129,14 @@
 				1DDEBE3F25EC8C2E008986B8 /* Info.plist */,
 			);
 			path = DJLogUITests;
+			sourceTree = "<group>";
+		};
+		1DDEBE5125ECA88B008986B8 /* Arithmetic */ = {
+			isa = PBXGroup;
+			children = (
+				1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */,
+			);
+			path = Arithmetic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDEBE2025EC8C2D008986B8 /* ViewController.swift in Sources */,
+				1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */,
 				1DDEBE1C25EC8C2D008986B8 /* AppDelegate.swift in Sources */,
 				1DDEBE1E25EC8C2D008986B8 /* SceneDelegate.swift in Sources */,
 			);
