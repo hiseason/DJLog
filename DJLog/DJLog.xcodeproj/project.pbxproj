@@ -16,6 +16,7 @@
 		1DDEBE3325EC8C2E008986B8 /* DJLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3225EC8C2E008986B8 /* DJLogTests.swift */; };
 		1DDEBE3E25EC8C2E008986B8 /* DJLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */; };
 		1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */; };
+		1DDEBE6A25ED1209008986B8 /* DJGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE6925ED1209008986B8 /* DJGCD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLogUITests.swift; sourceTree = "<group>"; };
 		1DDEBE3F25EC8C2E008986B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
+		1DDEBE6925ED1209008986B8 /* DJGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJGCD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		1DDEBE1A25EC8C2D008986B8 /* DJLog */ = {
 			isa = PBXGroup;
 			children = (
+				1DDEBE6825ED11EA008986B8 /* Thread */,
 				1DDEBE5125ECA88B008986B8 /* Arithmetic */,
 				1DDEBE1B25EC8C2D008986B8 /* AppDelegate.swift */,
 				1DDEBE1D25EC8C2D008986B8 /* SceneDelegate.swift */,
@@ -137,6 +140,14 @@
 				1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */,
 			);
 			path = Arithmetic;
+			sourceTree = "<group>";
+		};
+		1DDEBE6825ED11EA008986B8 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				1DDEBE6925ED1209008986B8 /* DJGCD.swift */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDEBE6A25ED1209008986B8 /* DJGCD.swift in Sources */,
 				1DDEBE2025EC8C2D008986B8 /* ViewController.swift in Sources */,
 				1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */,
 				1DDEBE1C25EC8C2D008986B8 /* AppDelegate.swift in Sources */,
