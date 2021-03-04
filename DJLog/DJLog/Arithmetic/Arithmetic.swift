@@ -18,20 +18,20 @@ class Arithmetic : NSObject {
         arithmetic.stringToArray("123")
 //        let digits = "123".map{Int(String($0))!}
         
-        let constArr = [3,8,-1,59,-7,-1,66,5,-26,100,25,1200,-12,83,66]
-        print("原数组: \(constArr)")
-
-        var quickArr = constArr//[6,1,2,5,9,3,4,7,10,8]
-        arithmetic.quickSort(&quickArr, left: 0, right: quickArr.count-1)
-        print("快排后: \(quickArr)")
-
-        if let mergeArr = arithmetic.mergeSort(constArr) {
-            print("归并后: \(mergeArr)")
-        }
-
-        var arr = [4,3,2,1]
-        let median = arithmetic.findMedian(&arr, count: arr.count)
-        print("中位数: \(median)")
+//        let constArr = [3,8,-1,59,-7,-1,66,5,-26,100,25,1200,-12,83,66]
+//        print("原数组: \(constArr)")
+//
+//        var quickArr = constArr//[6,1,2,5,9,3,4,7,10,8]
+//        arithmetic.quickSort(&quickArr, left: 0, right: quickArr.count-1)
+//        print("快排后: \(quickArr)")
+//
+//        if let mergeArr = arithmetic.mergeSort(constArr) {
+//            print("归并后: \(mergeArr)")
+//        }
+//
+//        var arr = [4,3,2,1]
+//        let median = arithmetic.findMedian(&arr, count: arr.count)
+//        print("中位数: \(median)")
 
     }
 }
@@ -75,37 +75,28 @@ extension Arithmetic {
         if num1 == "0" || num2 == "0" {
             return "0"
         }
-        
+
         let arr1 = num1.compactMap { Int(String($0)) }
         let arr2 = num2.compactMap { Int(String($0)) }
-        
+
         var res = [Int](repeating: 0, count: arr1.count + arr2.count)
         for i in (0..<arr1.count).reversed() {
             for j in (0..<arr2.count).reversed() {
                 var mul = arr1[i] * arr2[j]
+                let p1 = i+j
+                let p2 = i+j+1
                 print("\(arr1[i]) * \(arr2[j]) = \(mul)")
                 print("res: \(res)")
-                mul += res[i+j+1]
-                print("后位: \(res[i+j+1]) mul: \(mul)")
-                res[i+j] += mul / 10 //这次的高位需要加上次的高位
-                res[i+j+1] = mul % 10 //低位一直在往前走,所以不用加上次的值
+                mul += res[p2]
+                print("十位: \(res[p1]) 个位: \(res[p2]) mul: \(mul)")
+                res[p1] += mul / 10 //这次的高位需要加上次的高位
+                res[p2] = mul % 10 //低位一直在往前走,所以不用加上次的值
                 print("res: \(res)\n")
-                /*
-                 int p1 = i + j, p2 = i + j + 1;
-                // 叠加到 res 上
-                int sum = mul + res[p2];
-                res[i + j + 1] = sum % 10;
-                res[i + j] += sum / 10;
-
-                作者：labuladong
-                链接：https://leetcode-cn.com/problems/multiply-strings/solution/gao-pin-mian-shi-xi-lie-zi-fu-chuan-cheng-fa-by-la/
-                来源：力扣（LeetCode）
-                著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-                 */
+                //链接：https://leetcode-cn.com/problems/multiply-strings/solution/gao-pin-mian-shi-xi-lie-zi-fu-chuan-cheng-fa-by-la/
             }
             print(res)
         }
-        
+
         var str = ""
         var i = res[0] > 0 ? 0 : 1
         for _ in i..<res.count {
@@ -324,7 +315,7 @@ extension Arithmetic {
         print("数字: \(num) ---- \(str)")
         return str
     }
-    
+    //1. 转换1亿以内的数字为中文表示(无小数), 比如 叁拾柒元正, 壹佰零捌元正
     //2. 输出给字符串数组中, 所有元素的最大公共子符串(区分大小写), 没有时返回空, 如 "ABC", "BCD", "BCUYT", 输出 "BC"
     func findMaxCommonSubStr(_ strArr: [String]) -> String {
         guard strArr.count > 0 else {

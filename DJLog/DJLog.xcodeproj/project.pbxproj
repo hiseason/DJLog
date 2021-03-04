@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D199FD425EF55830007BB42 /* DJMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FD325EF55830007BB42 /* DJMemory.m */; };
+		1D199FDA25EF55B10007BB42 /* DJBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FD925EF55B10007BB42 /* DJBlock.m */; };
+		1D199FE325EF56120007BB42 /* DJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FE225EF56120007BB42 /* DJPerson.m */; };
+		1D199FEC25EF573B0007BB42 /* DJGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D199FEB25EF573B0007BB42 /* DJGCD.m */; };
 		1DDEBE1C25EC8C2D008986B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE1B25EC8C2D008986B8 /* AppDelegate.swift */; };
 		1DDEBE1E25EC8C2D008986B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE1D25EC8C2D008986B8 /* SceneDelegate.swift */; };
 		1DDEBE2025EC8C2D008986B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE1F25EC8C2D008986B8 /* ViewController.swift */; };
@@ -16,7 +20,6 @@
 		1DDEBE3325EC8C2E008986B8 /* DJLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3225EC8C2E008986B8 /* DJLogTests.swift */; };
 		1DDEBE3E25EC8C2E008986B8 /* DJLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */; };
 		1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */; };
-		1DDEBE6A25ED1209008986B8 /* DJGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEBE6925ED1209008986B8 /* DJGCD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D199FD125EF55830007BB42 /* DJLog-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DJLog-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D199FD225EF55830007BB42 /* DJMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJMemory.h; sourceTree = "<group>"; };
+		1D199FD325EF55830007BB42 /* DJMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJMemory.m; sourceTree = "<group>"; };
+		1D199FD825EF55B10007BB42 /* DJBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJBlock.h; sourceTree = "<group>"; };
+		1D199FD925EF55B10007BB42 /* DJBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJBlock.m; sourceTree = "<group>"; };
+		1D199FE125EF56120007BB42 /* DJPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJPerson.h; sourceTree = "<group>"; };
+		1D199FE225EF56120007BB42 /* DJPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJPerson.m; sourceTree = "<group>"; };
+		1D199FEA25EF573B0007BB42 /* DJGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJGCD.h; sourceTree = "<group>"; };
+		1D199FEB25EF573B0007BB42 /* DJGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJGCD.m; sourceTree = "<group>"; };
 		1DDEBE1825EC8C2D008986B8 /* DJLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DDEBE1B25EC8C2D008986B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DDEBE1D25EC8C2D008986B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +64,6 @@
 		1DDEBE3D25EC8C2E008986B8 /* DJLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJLogUITests.swift; sourceTree = "<group>"; };
 		1DDEBE3F25EC8C2E008986B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DDEBE5D25ECA91F008986B8 /* Arithmetic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arithmetic.swift; sourceTree = "<group>"; };
-		1DDEBE6925ED1209008986B8 /* DJGCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJGCD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D199FD025EF55580007BB42 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				1D199FD225EF55830007BB42 /* DJMemory.h */,
+				1D199FD325EF55830007BB42 /* DJMemory.m */,
+				1D199FD825EF55B10007BB42 /* DJBlock.h */,
+				1D199FD925EF55B10007BB42 /* DJBlock.m */,
+				1D199FE125EF56120007BB42 /* DJPerson.h */,
+				1D199FE225EF56120007BB42 /* DJPerson.m */,
+				1D199FD125EF55830007BB42 /* DJLog-Bridging-Header.h */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
 		1DDEBE0F25EC8C2D008986B8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,7 @@
 		1DDEBE1A25EC8C2D008986B8 /* DJLog */ = {
 			isa = PBXGroup;
 			children = (
+				1D199FD025EF55580007BB42 /* Memory */,
 				1DDEBE6825ED11EA008986B8 /* Thread */,
 				1DDEBE5125ECA88B008986B8 /* Arithmetic */,
 				1DDEBE1B25EC8C2D008986B8 /* AppDelegate.swift */,
@@ -145,7 +171,8 @@
 		1DDEBE6825ED11EA008986B8 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
-				1DDEBE6925ED1209008986B8 /* DJGCD.swift */,
+				1D199FEA25EF573B0007BB42 /* DJGCD.h */,
+				1D199FEB25EF573B0007BB42 /* DJGCD.m */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -217,6 +244,7 @@
 				TargetAttributes = {
 					1DDEBE1725EC8C2D008986B8 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					1DDEBE2D25EC8C2E008986B8 = {
 						CreatedOnToolsVersion = 12.4;
@@ -280,10 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DDEBE6A25ED1209008986B8 /* DJGCD.swift in Sources */,
 				1DDEBE2025EC8C2D008986B8 /* ViewController.swift in Sources */,
+				1D199FE325EF56120007BB42 /* DJPerson.m in Sources */,
+				1D199FD425EF55830007BB42 /* DJMemory.m in Sources */,
+				1D199FDA25EF55B10007BB42 /* DJBlock.m in Sources */,
 				1DDEBE5E25ECA91F008986B8 /* Arithmetic.swift in Sources */,
 				1DDEBE1C25EC8C2D008986B8 /* AppDelegate.swift in Sources */,
+				1D199FEC25EF573B0007BB42 /* DJGCD.m in Sources */,
 				1DDEBE1E25EC8C2D008986B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSUX84SD9U;
 				INFOPLIST_FILE = DJLog/Info.plist;
@@ -469,6 +501,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = haojiajia.DJLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DJLog/Memory/DJLog-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YSUX84SD9U;
 				INFOPLIST_FILE = DJLog/Info.plist;
@@ -488,6 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = haojiajia.DJLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DJLog/Memory/DJLog-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

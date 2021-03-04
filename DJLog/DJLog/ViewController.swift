@@ -11,7 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Arithmetic.execute()
+//        Arithmetic.execute()
+        DJBlock.execute()
+//        DJGCD.execute()
     }
 
 
